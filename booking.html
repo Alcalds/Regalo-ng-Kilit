@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2f24">
+  <meta name="description" content="Interactive Kingfisher Park booking prototype for visitor experiences in Coron, Palawan. No real payment is processed.">
+  <title>Book Kingfisher Park — Responsive Interactive Prototype</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+<body class="booking-page">
+  <a class="skip-link" href="#booking-main">Skip to booking</a>
+
+  <header class="site-header booking-header" id="site-header">
+    <div class="header-shell">
+      <a class="brand" href="index.html" aria-label="Kingfisher Park home">
+        <img
+          class="brand-logo"
+          src="assets/logo/kingfisher-park-logo-512.webp"
+          alt=""
+          width="512"
+          height="512"
+        >
+        <span class="brand-copy">
+          <strong>KINGFISHER PARK</strong>
+          <small>CORON · PALAWAN</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="the-park.html">THE PARK</a>
+        <a href="experiences.html">EXPERIENCES</a>
+        <a href="biodiversity.html">BIODIVERSITY</a>
+        <a href="stories.html">STORIES</a>
+        <a href="plan-your-visit.html">PLAN YOUR VISIT</a>
+      </nav>
+
+      <a class="header-book header-book-active" href="booking.html" aria-current="page">
+        <span>BOOKING</span>
+        <span aria-hidden="true">●</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open navigation menu"
+      >
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <a href="the-park.html">THE PARK</a>
+        <a href="experiences.html">EXPERIENCES</a>
+        <a href="biodiversity.html">BIODIVERSITY</a>
+        <a href="stories.html">STORIES</a>
+        <a href="plan-your-visit.html">PLAN YOUR VISIT</a>
+        <a class="mobile-book" href="booking.html" aria-current="page">BOOKING <span aria-hidden="true">●</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="booking-main">
+    <section class="booking-hero" aria-labelledby="booking-page-title">
+      <div class="page-width booking-hero-grid">
+        <div>
+          <span class="section-kicker section-kicker-light">INTERACTIVE BOOKING PROTOTYPE</span>
+          <h1 id="booking-page-title">Plan your Kingfisher Park experience.</h1>
+        </div>
+        <div class="booking-hero-note">
+          <strong>DEMO ONLY</strong>
+          <p>
+            This VS Code prototype calculates a booking and simulates checkout.
+            It does not create a real reservation or process a real payment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-workspace" aria-label="Kingfisher Park booking prototype">
+      <div class="page-width booking-layout">
+        <div class="booking-flow">
+          <ol class="booking-progress" id="booking-progress" aria-label="Booking progress">
+            <li class="is-active" data-progress-step="1"><span>1</span><small>Experience</small></li>
+            <li data-progress-step="2"><span>2</span><small>What to Expect</small></li>
+            <li data-progress-step="3"><span>3</span><small>Date &amp; Time</small></li>
+            <li data-progress-step="4"><span>4</span><small>Guests</small></li>
+            <li data-progress-step="5"><span>5</span><small>Details</small></li>
+            <li data-progress-step="6"><span>6</span><small>Review</small></li>
+            <li data-progress-step="7"><span>7</span><small>Demo Payment</small></li>
+            <li data-progress-step="8"><span>8</span><small>Confirmed</small></li>
+          </ol>
+
+
+          <div class="booking-mobile-status" id="booking-mobile-status" aria-live="polite">
+            <span id="booking-mobile-step">Step 1 of 8 · Experience</span>
+            <strong id="booking-mobile-total">₱0</strong>
+          </div>
+
+          <div class="booking-error" id="booking-error" role="alert" aria-live="assertive"></div>
+
+          <form id="booking-form" novalidate>
+            <!-- STEP 1 -->
+            <section class="booking-step is-active" data-step="1" aria-labelledby="step-1-title">
+              <div class="step-heading">
+                <span>STEP 01</span>
+                <h2 id="step-1-title" tabindex="-1">Choose your experience.</h2>
+                <p>Current rates are shown per person.</p>
+              </div>
+
+              <fieldset class="experience-options">
+                <legend class="sr-only">Choose an experience</legend>
+
+                <label class="booking-option">
+                  <input type="radio" name="experience" value="mangrove">
+                  <span class="option-number">01</span>
+                  <span class="option-copy">
+                    <strong>Mangrove Kayak</strong>
+                    <small>Explore the park's waterways by kayak.</small>
+                    <em>Availability depends on low/high tide conditions and resulting water depth.</em>
+                  </span>
+                  <span class="option-price">₱600<small>/ person</small></span>
+                </label>
+
+                <label class="booking-option">
+                  <input type="radio" name="experience" value="firefly">
+                  <span class="option-number">02</span>
+                  <span class="option-copy">
+                    <strong>Firefly Boardwalk</strong>
+                    <small>Experience the mangrove landscape after sunset.</small>
+                    <em>Wildlife viewing depends on natural conditions.</em>
+                  </span>
+                  <span class="option-price">₱400<small>/ person</small></span>
+                </label>
+
+                <label class="booking-option">
+                  <input type="radio" name="experience" value="night-kayak">
+                  <span class="option-number">03</span>
+                  <span class="option-copy">
+                    <strong>Fireflies + Night Kayak</strong>
+                    <small>Boardwalk viewing plus kayaking for bioluminescent plankton and additional firefly viewing.</small>
+                    <em>Conditions can vary with weather, wind, moonlight and tide.</em>
+                  </span>
+                  <span class="option-price">₱600<small>/ person</small></span>
+                </label>
+
+                <label class="booking-option">
+                  <input type="radio" name="experience" value="complete">
+                  <span class="option-number">04</span>
+                  <span class="option-copy">
+                    <strong>The Complete Experience</strong>
+                    <small>Combine the three current activities in one visit.</small>
+                    <em>Exact sequence and timing remain subject to park confirmation.</em>
+                  </span>
+                  <span class="option-price">₱1,000<small>/ person</small></span>
+                </label>
+              </fieldset>
+
+              <div class="step-actions">
+                <a class="booking-back-home" href="experiences.html">← BACK TO EXPERIENCES</a>
+                <button class="button booking-next" type="button" data-next>CONTINUE <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+
+            <!-- STEP 2 -->
+            <section class="booking-step expectation-step" data-step="2" aria-labelledby="step-2-title" hidden>
+              <div class="step-heading">
+                <span>STEP 02</span>
+                <h2 id="step-2-title" tabindex="-1">Know what to expect.</h2>
+                <p>Review the character of your selected experience before choosing a date.</p>
+              </div>
+
+              <div class="expectation-panel">
+                <div class="expectation-topline">
+                  <span id="expectation-type">SELECTED EXPERIENCE</span>
+                  <strong id="expectation-price">—</strong>
+                </div>
+                <h3 id="expectation-title">Your experience</h3>
+                <p id="expectation-intro">Choose an experience first to see the most relevant visitor notes.</p>
+                <ul class="expectation-points" id="expectation-points"></ul>
+              </div>
+
+              <div class="expectation-basics" aria-label="Before you book">
+                <article>
+                  <span>01</span>
+                  <strong>Dress for nature</strong>
+                  <p>Wear comfortable clothing and suitable footwear for outdoor, dark or uneven conditions.</p>
+                </article>
+                <article>
+                  <span>02</span>
+                  <strong>Follow your guide</strong>
+                  <p>Observe park and guide instructions, especially around water, paths and wildlife-viewing areas.</p>
+                </article>
+                <article>
+                  <span>03</span>
+                  <strong>Respect the habitat</strong>
+                  <p>Keep noise low and avoid flash photography around fireflies and other sensitive wildlife.</p>
+                </article>
+              </div>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← BACK</button>
+                <button class="button booking-next" type="button" data-next>CHOOSE DATE <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <!-- STEP 3 -->
+            <section class="booking-step" data-step="3" aria-labelledby="step-3-title" hidden>
+              <div class="step-heading">
+                <span>STEP 03</span>
+                <h2 id="step-3-title" tabindex="-1">Choose a preferred date.</h2>
+                <p>Final activity time slots will appear only when confirmed availability is configured.</p>
+              </div>
+
+              <div class="date-time-grid">
+                <div class="field-group">
+                  <label for="visit-date">Preferred visit date</label>
+                  <input id="visit-date" name="visitDate" type="date" required>
+                  <small>Select a preferred visit date for this booking prototype.</small>
+                </div>
+
+                <div class="time-pending">
+                  <span class="time-status">TIME SLOT</span>
+                  <strong>To be confirmed by Kingfisher Park</strong>
+                  <p>
+                    The live booking system will display only confirmed availability and time slots.
+                  </p>
+                </div>
+              </div>
+
+              <label class="acknowledge-box">
+                <input type="checkbox" name="timePendingAck" required>
+                <span>
+                  I understand that the exact activity time will be shown only when confirmed availability is configured.
+                </span>
+              </label>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← BACK</button>
+                <button class="button booking-next" type="button" data-next>CONTINUE <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <!-- STEP 4 -->
+            <section class="booking-step" data-step="4" aria-labelledby="step-4-title" hidden>
+              <div class="step-heading">
+                <span>STEP 04</span>
+                <h2 id="step-4-title" tabindex="-1">How many guests?</h2>
+                <p>Current pricing is per person.</p>
+              </div>
+
+              <div class="guest-control">
+                <button type="button" aria-label="Decrease guests" data-guest-minus>−</button>
+                <div>
+                  <input id="guest-count" name="guests" type="number" min="1" value="1" inputmode="numeric" required>
+                  <label for="guest-count">guest<span id="guest-plural"></span></label>
+                </div>
+                <button type="button" aria-label="Increase guests" data-guest-plus>+</button>
+              </div>
+
+              <p class="guest-note">
+                Current pricing is per person. Any final capacity limits or special-rate policies will appear only after they are confirmed.
+              </p>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← BACK</button>
+                <button class="button booking-next" type="button" data-next>CONTINUE <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <!-- STEP 5 -->
+            <section class="booking-step" data-step="5" aria-labelledby="step-5-title" hidden>
+              <div class="step-heading">
+                <span>STEP 05</span>
+                <h2 id="step-5-title" tabindex="-1">Guest details.</h2>
+                <p>Enter the contact details needed to manage your reservation.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="field-group field-wide">
+                  <label for="full-name">Full name</label>
+                  <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="field-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field-group">
+                  <label for="mobile">Mobile / WhatsApp</label>
+                  <input id="mobile" name="mobile" type="tel" autocomplete="tel" required>
+                </div>
+
+                <div class="field-group">
+                  <label for="hotel">Hotel / accommodation <span>optional</span></label>
+                  <input id="hotel" name="hotel" type="text" autocomplete="organization">
+                </div>
+
+                <div class="field-group">
+                  <label for="contact-pref">Preferred contact</label>
+                  <select id="contact-pref" name="contactPreference">
+                    <option value="email">Email</option>
+                    <option value="mobile">Mobile / WhatsApp</option>
+                  </select>
+                </div>
+
+                <div class="field-group field-wide">
+                  <label for="requests">Special requests <span>optional</span></label>
+                  <textarea id="requests" name="requests" rows="4" maxlength="500"></textarea>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← BACK</button>
+                <button class="button booking-next" type="button" data-next>REVIEW BOOKING <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <!-- STEP 6 -->
+            <section class="booking-step" data-step="6" aria-labelledby="step-6-title" hidden>
+              <div class="step-heading">
+                <span>STEP 06</span>
+                <h2 id="step-6-title" tabindex="-1">Review before checkout.</h2>
+                <p>Check the details and the current per-person calculation.</p>
+              </div>
+
+              <div class="review-card">
+                <dl>
+                  <div><dt>Experience</dt><dd id="review-experience">—</dd></div>
+                  <div><dt>Visit date</dt><dd id="review-date">—</dd></div>
+                  <div><dt>Time</dt><dd>To be confirmed by Kingfisher Park</dd></div>
+                  <div><dt>Guest</dt><dd id="review-guest">—</dd></div>
+                  <div><dt>Email</dt><dd id="review-email">—</dd></div>
+                  <div><dt>Mobile</dt><dd id="review-mobile">—</dd></div>
+                </dl>
+
+                <div class="review-total">
+                  <span id="review-rate">₱0 × 0 guests</span>
+                  <strong id="review-total">₱0</strong>
+                  <small>No transaction or convenience fee is assumed.</small>
+                </div>
+              </div>
+
+              <div class="policy-preview">
+                <span class="policy-status">POLICY STATUS</span>
+                <div>
+                  <strong>Already reflected in prototype</strong>
+                  <p>Tide/weather/natural-condition notices and responsible-viewing guidance.</p>
+                </div>
+                <div>
+                  <strong>Final booking terms</strong>
+                  <p>Cancellation, refund, rescheduling, no-show and final payment policies will appear before live checkout.</p>
+                </div>
+              </div>
+
+              <label class="acknowledge-box">
+                <input type="checkbox" name="reviewAck" required>
+                <span>
+                  I have reviewed the prototype booking information and understand that this is
+                  not a real reservation.
+                </span>
+              </label>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← EDIT DETAILS</button>
+                <button class="button booking-next" type="button" data-next>CONTINUE TO DEMO PAYMENT <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <!-- STEP 7 -->
+            <section class="booking-step" data-step="7" aria-labelledby="step-7-title" hidden>
+              <div class="step-heading">
+                <span>STEP 07</span>
+                <h2 id="step-7-title" tabindex="-1">Demo checkout.</h2>
+                <p>No real payment credentials are requested or stored.</p>
+              </div>
+
+              <div class="demo-payment-panel">
+                <div class="demo-payment-lock" aria-hidden="true">◇</div>
+                <span>SECURE PAYMENT · WIX STAGE</span>
+                <h3 id="payment-total">₱0</h3>
+                <p>
+                  In the final Wix site, this area will connect to the approved secure payment provider.
+                </p>
+
+                <p class="demo-payment-disclaimer" id="demo-payment-disclaimer">
+                  Demo only — clicking the button below does not contact a payment gateway,
+                  reserve a slot, charge a card, or create a live Kingfisher Park booking.
+                </p>
+
+              <div class="demo-payment-notes">
+                  <div>
+                    <strong>THIS PROTOTYPE</strong>
+                    <small>Simulates success only.</small>
+                  </div>
+                  <div>
+                    <strong>FINAL WEBSITE</strong>
+                    <small>Uses an approved secure payment provider.</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button class="booking-prev" type="button" data-prev>← BACK</button>
+                <button class="button demo-pay-button" type="button" id="simulate-payment" aria-describedby="demo-payment-disclaimer">
+                  SIMULATE SUCCESSFUL PAYMENT
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </section>
+
+            <!-- STEP 8 -->
+            <section class="booking-step booking-confirmation" data-step="8" aria-labelledby="step-8-title" hidden>
+              <div class="confirmation-mark" aria-hidden="true">✓</div>
+              <div class="step-heading">
+                <span>DEMO CONFIRMATION</span>
+                <h2 id="step-8-title" tabindex="-1">Your prototype booking is complete.</h2>
+                <p>No real reservation or payment was created.</p>
+              </div>
+
+              <div class="confirmation-card">
+                <div class="confirmation-top">
+                  <div>
+                    <span>DEMO REFERENCE</span>
+                    <strong id="confirmation-reference">KP-DEMO-0000</strong>
+                  </div>
+                  <span class="demo-paid">DEMO PAID</span>
+                </div>
+
+                <dl>
+                  <div><dt>Guest</dt><dd id="confirmation-name">—</dd></div>
+                  <div><dt>Experience</dt><dd id="confirmation-experience">—</dd></div>
+                  <div><dt>Date</dt><dd id="confirmation-date">—</dd></div>
+                  <div><dt>Time</dt><dd>To be confirmed by Kingfisher Park</dd></div>
+                  <div><dt>Guests</dt><dd id="confirmation-guests">—</dd></div>
+                  <div><dt>Demo amount</dt><dd id="confirmation-total">—</dd></div>
+                </dl>
+              </div>
+
+              <div class="confirmation-actions">
+                <button class="button" type="button" id="print-summary">PRINT / SAVE SUMMARY</button>
+                <button class="booking-prev" type="button" id="book-another">BOOK ANOTHER EXPERIENCE</button>
+                <a class="booking-back-home" href="index.html">RETURN TO HOMEPAGE →</a>
+              </div>
+            </section>
+          </form>
+        </div>
+
+        <aside class="live-summary" aria-labelledby="summary-title" aria-live="polite">
+          <span class="summary-kicker">YOUR BOOKING</span>
+          <h2 id="summary-title">Live summary</h2>
+
+          <div class="summary-experience">
+            <span id="summary-experience-label">No experience selected</span>
+            <strong id="summary-rate">—</strong>
+          </div>
+
+          <dl class="summary-list">
+            <div><dt>Date</dt><dd id="summary-date">—</dd></div>
+            <div><dt>Time</dt><dd id="summary-time">Pending confirmation</dd></div>
+            <div><dt>Guests</dt><dd id="summary-guests">1</dd></div>
+          </dl>
+
+          <div class="summary-total">
+            <span>Estimated total</span>
+            <strong id="summary-total">₱0</strong>
+          </div>
+
+          <p>
+            Current rates are per person. No unconfirmed booking, payment or convenience
+            fee has been added.
+          </p>
+
+          <div class="summary-status">
+            <span class="summary-dot" aria-hidden="true"></span>
+            <span>VS Code demo · no live transaction</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="booking-footer">
+    <div class="page-width">
+      <span>© 2026 KINGFISHER PARK</span>
+      <a href="plan-your-visit.html#know-before">RESPONSIBLE VISITING</a>
+      <a href="plan-your-visit.html">PLAN YOUR VISIT</a>
+      <span>PRIVACY &amp; FINAL BOOKING TERMS · PENDING</span>
+    </div>
+  </footer>
+
+  <div class="prototype-toast" id="prototype-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
