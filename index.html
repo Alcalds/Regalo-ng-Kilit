@@ -1,642 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b2f24">
-  <meta name="description" content="Kingfisher Park in Coron, Palawan — mangrove landscapes, biodiversity, day and night nature experiences, visitor information, and booking.">
-  <title>Kingfisher Park — Coron, Palawan</title>
-  <link rel="preload" as="image" href="assets/images/hero/mangrove-aerial.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <header class="site-header" id="site-header">
+  <title>Regalo ng Kilit Foundation Inc.</title>
+  <meta
+    name="description"
+    content="Regalo ng Kilit Foundation Inc. works with communities and partners in the Calamianes to connect biodiversity conservation, regenerative agriculture, nutritious food, sustainable livelihoods, education, and community action."
+  />
+  <meta name="theme-color" content="#0D2F0C" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/images/hero-01-biodiversity.png"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       HEADER — synced to current Wix Studio desktop design
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
     <div class="header-shell">
-      <a class="brand" href="index.html" aria-label="Kingfisher Park home">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="Regalo ng Kilit Foundation Inc. — Home"
+      >
         <img
-          class="brand-logo"
-          src="assets/logo/kingfisher-park-logo-512.webp"
+          src="assets/logo/rnk-bird.png"
           alt=""
-          width="512"
-          height="512"
-        >
-        <span class="brand-copy">
-          <strong>KINGFISHER PARK</strong>
-          <small>CORON · PALAWAN</small>
+          class="brand-symbol"
+        />
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-name">
+          <span>Regalo</span>
+          <span>ng Kilit</span>
         </span>
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="the-park.html">THE PARK</a>
-        <a href="experiences.html">EXPERIENCES</a>
-        <a href="biodiversity.html">BIODIVERSITY</a>
-        <a href="stories.html">STORIES</a>
-        <a href="plan-your-visit.html">PLAN YOUR VISIT</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="our-work.html" class="nav-link">Our Work</a>
+        <a href="places-stories.html" class="nav-link">Places &amp; Stories</a>
+        <a href="get-involved.html" class="header-cta">
+          Get Involved
+          <span aria-hidden="true">→</span>
+        </a>
       </nav>
-
-      <a class="header-book" href="booking.html">
-        <span>BOOK NOW</span>
-        <span aria-hidden="true">↗</span>
-      </a>
 
       <button
         class="menu-toggle"
+        id="menuToggle"
         type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
         aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
       >
-        <span></span><span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
 
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <nav aria-label="Mobile navigation">
-        <a href="the-park.html">THE PARK</a>
-        <a href="experiences.html">EXPERIENCES</a>
-        <a href="biodiversity.html">BIODIVERSITY</a>
-        <a href="stories.html">STORIES</a>
-        <a href="plan-your-visit.html">PLAN YOUR VISIT</a>
-        <a class="mobile-book" href="booking.html">BOOK NOW <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
+    <nav
+      class="mobile-nav"
+      id="mobileNav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-nav-inner">
+        <a href="about.html" class="mobile-nav-link"><span>01</span>About</a>
+        <a href="our-work.html" class="mobile-nav-link"><span>02</span>Our Work</a>
+        <a href="places-stories.html" class="mobile-nav-link"><span>03</span>Places &amp; Stories</a>
+        <a href="get-involved.html" class="mobile-nav-cta">
+          Get Involved <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </nav>
   </header>
 
-  <main id="main-content">
-    <section
-      class="hero living-light-hero"
-      id="hero"
-      aria-labelledby="hero-title"
-      style="
-        --scene-day: 1;
-        --scene-golden: 0;
-        --scene-night: 0;
-        --lightline-progress: 8%;
-      "
-    >
-      <div class="living-scenes" aria-hidden="true">
-        <img
-          class="living-scene living-scene-day"
-          src="assets/images/hero/mangrove-aerial.webp"
-          alt=""
-          width="2048"
-          height="1152"
-          fetchpriority="high"
-        >
-        <img
-          class="living-scene living-scene-golden"
-          src="assets/images/night/sunset-water.webp"
-          alt=""
-          width="975"
-          height="1300"
-        >
-        <img
-          class="living-scene living-scene-night"
-          src="assets/images/night/night-boardwalk.webp"
-          alt=""
-          width="1600"
-          height="898"
-        >
-      </div>
-
-      <div class="living-colorwash" aria-hidden="true"></div>
-      <canvas class="firefly-canvas" id="firefly-canvas" aria-hidden="true"></canvas>
-      <div class="living-vignette" aria-hidden="true"></div>
-
-      <div class="page-width living-hero-layout">
-        <div class="living-meta">
-          <span>13°N · CALAMIANES</span>
-          <span>CORON · PALAWAN</span>
-        </div>
-
-        <h1 class="living-title" id="hero-title">
-          <span class="living-title-kingfisher">KINGFISHER</span>
-          <span class="living-title-park">PARK</span>
-        </h1>
-
-        <div class="living-statement">
-          <p class="living-context" id="living-context" aria-live="polite">
-            MANGROVE KAYAK
-          </p>
-          <p class="living-message">THE LANDSCAPE CHANGES WITH THE LIGHT.</p>
-          <p class="living-condition" id="living-condition">
-            <strong>TIDE NOTE</strong>
-            <span>Availability depends on low/high tide conditions and resulting water depth.</span>
-          </p>
-          <a
-            class="living-cta"
-            id="living-cta"
-            href="booking.html"
-          >
-            <strong id="living-cta-label">BOOK YOUR EXPERIENCE</strong>
-            <span class="living-cta-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-
-        <div class="living-identity" aria-label="Kingfisher Park identity">
-          <span>BIODIVERSITY HAVEN</span>
-          <i aria-hidden="true"></i>
-          <span>ESTD 2008</span>
-        </div>
-      </div>
-
-      <div class="lightline-shell" aria-label="Explore Kingfisher Park from daylight to after dark">
-        <div class="page-width lightline-inner">
-          <div class="lightline-stage-labels" role="group" aria-label="Light stages">
-            <button
-              type="button"
-              class="light-stage is-active"
-              data-light-stage="8"
-              data-stage-name="day"
-              aria-pressed="true"
-            >
-              <span>DAYLIGHT</span>
-              <small>MANGROVES</small>
-            </button>
-
-            <button
-              type="button"
-              class="light-stage"
-              data-light-stage="50"
-              data-stage-name="golden"
-              aria-pressed="false"
-            >
-              <span>GOLDEN HOUR</span>
-              <small>THE PARK SLOWS DOWN</small>
-            </button>
-
-            <button
-              type="button"
-              class="light-stage"
-              data-light-stage="92"
-              data-stage-name="night"
-              aria-pressed="false"
-            >
-              <span>AFTER DARK</span>
-              <small>FIREFLIES · NIGHT KAYAK</small>
-            </button>
-          </div>
-
-          <div class="lightline-control">
-            <span class="light-time">1 PM</span>
-
-            <div class="light-range-wrap">
-              <div class="light-range-track" aria-hidden="true">
-                <i></i>
-                <b></b>
-              </div>
-              <input
-                id="lightline-range"
-                class="light-range"
-                type="range"
-                min="0"
-                max="100"
-                value="8"
-                step="1"
-                aria-label="Change the Kingfisher Park Hero from daylight to after dark"
-                aria-valuetext="Daylight"
-              >
-            </div>
-
-            <span class="light-time">9 PM</span>
-          </div>
-
-          <div class="lightline-instruction">
-            <span>DRAG THE LIGHT</span>
-            <i aria-hidden="true"></i>
-            <span id="living-time-status" aria-live="polite">DAYLIGHT</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="visit-glance" id="visit-glance" aria-labelledby="glance-title">
-      <div class="page-width">
-        <div class="glance-shell">
-          <div class="glance-heading">
-            <span class="section-kicker">YOUR VISIT AT A GLANCE</span>
-            <h2 id="glance-title">Nature by day.<br>Wonder by night.</h2>
-          </div>
-
-          <dl class="glance-grid">
-            <div class="glance-item">
-              <dt>LOCATION</dt>
-              <dd>Coron, Palawan</dd>
-              <span>Calamianes, Philippines</span>
-            </div>
-            <div class="glance-item">
-              <dt>OPEN DAILY</dt>
-              <dd>1:00 PM — 9:00 PM</dd>
-              <span>Current operating hours</span>
-            </div>
-            <div class="glance-item">
-              <dt>EXPERIENCE</dt>
-              <dd>Day + Night</dd>
-              <span>Mangroves, fireflies &amp; more</span>
-            </div>
-            <div class="glance-item">
-              <dt>RESERVATIONS</dt>
-              <dd>Book Online</dd>
-              <span>Online booking · secure checkout at launch</span>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="experiences" id="experiences" aria-labelledby="experiences-title">
-      <div class="page-width">
-        <div class="section-intro">
-          <div>
-            <span class="section-kicker">CHOOSE YOUR EXPERIENCE</span>
-            <h2 id="experiences-title">Find your way<br>into the wild.</h2>
-          </div>
-          <p>
-            Start in the mangroves, stay for the evening, or experience the park across
-            daylight and night. Current rates below are per person.
-          </p>
-        </div>
-
-        <div class="experience-grid">
-          <article class="experience-card card-day">
-            <a class="experience-media" href="booking.html?experience=mangrove" aria-label="Book Mangrove Kayak">
-              <img src="assets/images/experiences/mangrove-kayak.webp" alt="Guests kayaking on calm water near Kingfisher Park" loading="lazy" width="1277" height="958">
-              <span class="card-index">01</span>
-              <span class="card-badge">DAY</span>
-            </a>
-            <div class="experience-copy">
-              <div class="experience-topline">
-                <h3>Mangrove Kayak</h3>
-                <p class="price">₱600 <span>/ person</span></p>
-              </div>
-              <p>Explore the waterways by kayak and experience the landscape from the water.</p>
-              <p class="condition">Availability depends on low/high tide conditions and resulting water depth.</p>
-              <div class="card-actions">
-                <a class="text-link" href="experiences.html">EXPLORE <span aria-hidden="true">→</span></a>
-                <a class="book-text" href="booking.html?experience=mangrove">BOOK <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="experience-card card-night">
-            <a class="experience-media" href="booking.html?experience=firefly" aria-label="Book Firefly Boardwalk">
-              <img src="assets/images/experiences/firefly-boardwalk.webp" alt="Kingfisher Park boardwalk beside calm water after dark" loading="lazy" width="1400" height="786">
-              <span class="card-index">02</span>
-              <span class="card-badge">NIGHT</span>
-            </a>
-            <div class="experience-copy">
-              <div class="experience-topline">
-                <h3>Firefly Boardwalk</h3>
-                <p class="price">₱400 <span>/ person</span></p>
-              </div>
-              <p>Experience the mangrove landscape after sunset from the park boardwalk.</p>
-              <p class="condition">Wildlife viewing depends on natural conditions.</p>
-              <div class="card-actions">
-                <a class="text-link" href="experiences.html">EXPLORE <span aria-hidden="true">→</span></a>
-                <a class="book-text" href="booking.html?experience=firefly">BOOK <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="experience-card card-night">
-            <a class="experience-media" href="booking.html?experience=night-kayak" aria-label="Book Fireflies and Night Kayak">
-              <img src="assets/images/experiences/night-kayak.webp" alt="Night sky photographed above Kingfisher Park" loading="lazy" width="1200" height="900">
-              <span class="card-index">03</span>
-              <span class="card-badge">AFTER DARK</span>
-            </a>
-            <div class="experience-copy">
-              <div class="experience-topline">
-                <h3>Fireflies + Night Kayak</h3>
-                <p class="price">₱600 <span>/ person</span></p>
-              </div>
-              <p>Boardwalk firefly viewing with kayaking for bioluminescent plankton and additional firefly viewing.</p>
-              <p class="condition">Conditions can vary with weather, wind, moonlight and tide.</p>
-              <div class="card-actions">
-                <a class="text-link" href="experiences.html">EXPLORE <span aria-hidden="true">→</span></a>
-                <a class="book-text" href="booking.html?experience=night-kayak">BOOK <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="experience-card card-sunset">
-            <a class="experience-media" href="booking.html?experience=complete" aria-label="Book Complete Kingfisher Experience">
-              <img src="assets/images/experiences/complete-experience.webp" alt="Orange sunset reflecting on water at Kingfisher Park" loading="lazy" width="1050" height="1400">
-              <span class="card-index">04</span>
-              <span class="card-badge">DAY → NIGHT</span>
-            </a>
-            <div class="experience-copy">
-              <div class="experience-topline">
-                <h3>The Complete Experience</h3>
-                <p class="price">₱1,000 <span>/ person</span></p>
-              </div>
-              <p>Combine all three current activities for a fuller Kingfisher Park visit.</p>
-              <p class="condition">Exact activity timing will be confirmed in the live booking system.</p>
-              <div class="card-actions">
-                <a class="text-link" href="experiences.html">EXPLORE <span aria-hidden="true">→</span></a>
-                <a class="book-text" href="booking.html?experience=complete">BOOK <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="experience-footer">
-          <p><strong>Nature sets the conditions.</strong> Firefly, plankton and kayaking experiences can vary with environmental conditions.</p>
-          <span>CURRENT RATES · PER PERSON</span>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="living-landscape" id="the-park" aria-labelledby="landscape-title">
-      <div class="page-width landscape-grid">
-        <div class="landscape-copy">
-          <span class="section-kicker">A LIVING MANGROVE LANDSCAPE</span>
-          <h2 id="landscape-title">The experience begins with the place itself.</h2>
-          <p class="landscape-lede">
-            Kingfisher Park is presented first as a living landscape — water, mangroves,
-            forest edges and wildlife — with visitor experiences designed around the
-            character of the place.
-          </p>
-
-          <div class="landscape-notes" aria-label="Landscape themes">
-            <div>
-              <span>01</span>
-              <strong>MANGROVES</strong>
-              <p>Waterways and mangrove edges shape the visual identity of the park.</p>
-            </div>
-            <div>
-              <span>02</span>
-              <strong>BIODIVERSITY</strong>
-              <p>The official Kingfisher Park identity describes the site as a Biodiversity Haven.</p>
-            </div>
-            <div>
-              <span>03</span>
-              <strong>DAY → NIGHT</strong>
-              <p>The website journey follows the park from daylight nature experiences into the evening.</p>
-            </div>
-          </div>
-
-          <a class="text-link landscape-link" href="biodiversity.html">
-            DISCOVER THE WILD SIDE
-            <span aria-hidden="true">↘</span>
-          </a>
-        </div>
-
-        <figure class="landscape-visual">
+  <main id="main">
+    <!-- =======================================================
+         HERO CONCEPT C — EDITORIAL CHAPTERS
+         A formal, photography-first hero. Four quiet chapters change
+         only the image, one line of emphasis, and the supporting note.
+         ======================================================= -->
+    <section class="editorial-hero" id="home" aria-labelledby="hero-title" data-chapter="0">
+      <div class="editorial-media" id="editorialMedia" aria-label="Regalo ng Kilit Foundation chapters">
+        <figure class="editorial-frame editorial-frame-0 is-active" data-editorial-frame="0" aria-hidden="false">
           <img
-            src="assets/images/landscape/park-panorama.webp"
-            alt="Elevated view across the Kingfisher Park landscape and surrounding water"
+            src="assets/images/hero-01-biodiversity.png"
+            alt="A Kilit, or blue-headed racquet-tail, perched among green foliage."
+          />
+        </figure>
+        <figure class="editorial-frame editorial-frame-1" data-editorial-frame="1" aria-hidden="true">
+          <img
+            src="assets/images/hero-02-growing-food.png"
+            alt="A cultivated green landscape showing food-growing and agricultural activity."
             loading="lazy"
-            width="1560"
-            height="878"
-          >
-          <figcaption>
-            <span>KINGFISHER PARK</span>
-            <span>CORON · PALAWAN</span>
-          </figcaption>
+          />
+        </figure>
+        <figure class="editorial-frame editorial-frame-2" data-editorial-frame="2" aria-hidden="true">
+          <img
+            src="assets/images/hero-04-calamianes.png"
+            alt="Young people in a Calamianes landscape with forest, sea, and islands beyond."
+            loading="lazy"
+          />
+        </figure>
+        <figure class="editorial-frame editorial-frame-3" data-editorial-frame="3" aria-hidden="true">
+          <img
+            src="assets/images/hero-03-community.png"
+            alt="Community members taking part in an outdoor group activity."
+            loading="lazy"
+          />
         </figure>
       </div>
-    </section>
-    <section class="home-biodiversity-preview" id="biodiversity" aria-labelledby="biodiversity-title">
-      <div class="page-width">
-        <div class="home-bio-head">
-          <div>
-            <span class="section-kicker section-kicker-light">BIODIVERSITY HAVEN</span>
-            <h2 id="biodiversity-title">A glimpse of the life around the park.</h2>
+
+      <div class="editorial-overlay" aria-hidden="true"></div>
+
+      <div class="editorial-shell">
+        <div class="editorial-copy">
+          <div class="editorial-eyebrow">
+            <span class="editorial-eyebrow-line" aria-hidden="true"></span>
+            <span>A living system in the Calamianes</span>
           </div>
-          <div class="home-bio-copy">
-            <p>
-              The homepage offers only a preview. The dedicated Biodiversity page gives
-              the Kingfisher Park archive more room while species details and photo
-              information are verified.
-            </p>
-            <a class="text-link light-link" href="biodiversity.html">
-              EXPLORE BIODIVERSITY
-              <span aria-hidden="true">→</span>
+
+          <h1 class="editorial-title" id="hero-title">
+            <span class="editorial-title-line is-emphasized" data-editorial-line="0">Enhancing biodiversity</span>
+            <span class="editorial-title-line" data-editorial-line="1">while growing food,</span>
+            <span class="editorial-title-line" data-editorial-line="2">boosting tourism,</span>
+            <span class="editorial-title-line" data-editorial-line="3">and increasing income.</span>
+          </h1>
+
+          <p class="editorial-description" id="editorialDescription" aria-live="polite">
+            Protecting habitat and biodiversity is the starting point for a healthier Calamianes.
+          </p>
+
+          <div class="editorial-actions">
+            <a href="our-work.html" class="hero-primary">
+              Explore Our Work <span aria-hidden="true">→</span>
             </a>
+            <a href="about.html#why-kilit" class="hero-secondary">Why Kilit?</a>
           </div>
         </div>
+      </div>
 
-        <div class="home-bio-grid">
-          <a class="home-bio-tile home-bio-tile-large" href="biodiversity.html" aria-label="Explore Kingfisher Park birdlife">
-            <img
-              src="assets/images/biodiversity/birdlife-01.webp"
-              alt="Colorful bird photographed at Kingfisher Park"
-              loading="lazy"
-              width="720"
-              height="479"
-            >
-            <span>BIRDLIFE</span>
-          </a>
+      <div class="editorial-chapters" role="group" aria-label="Explore RnK chapters">
+        <button class="editorial-chapter is-active" type="button" data-editorial-target="0" aria-pressed="true">
+          <span class="editorial-chapter-index">01</span>
+          <span class="editorial-chapter-label">Biodiversity</span>
+        </button>
+        <button class="editorial-chapter" type="button" data-editorial-target="1" aria-pressed="false">
+          <span class="editorial-chapter-index">02</span>
+          <span class="editorial-chapter-label">Food</span>
+        </button>
+        <button class="editorial-chapter" type="button" data-editorial-target="2" aria-pressed="false">
+          <span class="editorial-chapter-index">03</span>
+          <span class="editorial-chapter-label">Landscape &amp; Tourism</span>
+        </button>
+        <button class="editorial-chapter" type="button" data-editorial-target="3" aria-pressed="false">
+          <span class="editorial-chapter-index">04</span>
+          <span class="editorial-chapter-label">Community &amp; Livelihoods</span>
+        </button>
+      </div>
+    </section>
 
-          <a class="home-bio-tile" href="biodiversity.html" aria-label="Explore Kingfisher Park forest birdlife">
-            <img
-              src="assets/images/biodiversity/birdlife-02.webp"
-              alt="Woodpecker photographed in the Kingfisher Park archive"
-              loading="lazy"
-              width="960"
-              height="640"
-            >
-            <span>FOREST EDGE</span>
-          </a>
+    <!-- =======================================================
+         WHY REGALO NG KILIT — concise homepage preview
+         Full founder story and quotation live on the About page.
+         ======================================================= -->
+    <section class="origin-section origin-preview" id="about" aria-labelledby="origin-title">
+      <div class="content-shell origin-grid">
+        <div class="origin-copy" data-reveal>
+          <span class="section-kicker">Why Regalo ng Kilit?</span>
+          <h2 id="origin-title">A gift from one bird to a whole community.</h2>
+          <p class="section-lead">
+            The Kilit became RnK's symbol for a conservation approach that connects
+            biodiversity with education, food, livelihoods, and community life across
+            the Calamianes.
+          </p>
+          <a class="section-text-link" href="about.html#why-kilit">Read the RnK story <span aria-hidden="true">→</span></a>
+        </div>
 
-          <a class="home-bio-tile" href="biodiversity.html" aria-label="Explore Kingfisher Park wildlife">
+        <div class="origin-visual" data-reveal>
+          <div class="founder-photo-wrap">
             <img
-              src="assets/images/biodiversity/birdlife-04.webp"
-              alt="Brightly colored bird photographed near the forest floor in the Kingfisher Park archive"
+              src="assets/images/story/dr-manuel-reyes.webp"
+              alt="Dr. Manuel R. Reyes of Regalo ng Kilit Foundation Inc."
+              class="founder-photo"
               loading="lazy"
-              width="1200"
-              height="799"
-            >
-            <span>WILDLIFE</span>
-          </a>
-
-          <a class="home-bio-tile" href="biodiversity.html" aria-label="Explore Kingfisher Park flora">
-            <img
-              src="assets/images/biodiversity/flora-01.webp"
-              alt="Pink flowering plant photographed in the Kingfisher Park archive"
-              loading="lazy"
-              width="445"
-              height="720"
-            >
-            <span>FLORA</span>
-          </a>
+            />
+            <div class="founder-caption">
+              <strong>Dr. Manuel R. Reyes</strong>
+              <span>President · Regalo ng Kilit Foundation Inc.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="after-dark" id="after-dark" aria-labelledby="after-dark-title">
-      <div class="night-sky" aria-hidden="true"></div>
-
-      <div class="page-width after-dark-inner">
-        <div class="night-copy">
-          <span class="section-kicker section-kicker-night">AFTER DARK</span>
-          <h2 id="after-dark-title">When daylight fades, the park reveals a quieter side.</h2>
-          <p>
-            Firefly viewing, nighttime kayaking and bioluminescent plankton are part of
-            Kingfisher Park's current evening experience. What visitors see can vary with
-            weather, wind, tide, moonlight and natural conditions.
-          </p>
-
-          <div class="night-points">
-            <div>
-              <span class="night-dot" aria-hidden="true"></span>
-              <strong>FIREFLIES ABOVE</strong>
-              <small>Natural sightings vary.</small>
-            </div>
-            <div>
-              <span class="night-dot night-dot-blue" aria-hidden="true"></span>
-              <strong>BIOLUMINESCENCE BELOW</strong>
-              <small>Visibility depends on conditions.</small>
-            </div>
+    <!-- =======================================================
+         OUR WORK — homepage overview only
+         Detailed BERAE, SHGBEE, network sites, and program material live on Our Work.
+         ======================================================= -->
+    <section class="work-section home-work-section" id="our-work" aria-labelledby="work-title">
+      <div class="content-shell">
+        <div class="work-heading" data-reveal>
+          <div>
+            <span class="section-kicker section-kicker-light">Our Work</span>
+            <h2 id="work-title">One landscape. Connected outcomes.</h2>
           </div>
-
-          <a class="button button-night" href="experiences.html#night-kayak">
-            VIEW NIGHT EXPERIENCES
-            <span aria-hidden="true">↑</span>
-          </a>
-        </div>
-
-        <div class="night-gallery" aria-label="Kingfisher Park from sunset into night">
-          <figure class="night-frame night-frame-sunset">
-            <img src="assets/images/night/sunset-water.webp" alt="Sunset colors reflected on calm water at Kingfisher Park" loading="lazy" width="975" height="1300">
-            <figcaption>GOLDEN HOUR</figcaption>
-          </figure>
-
-          <figure class="night-frame night-frame-main">
-            <img src="assets/images/night/milky-way.webp" alt="Night sky and Milky Way above Kingfisher Park" loading="lazy" width="1800" height="1350">
-            <figcaption>NIGHT SKY</figcaption>
-          </figure>
-
-          <figure class="night-frame night-frame-boardwalk">
-            <img src="assets/images/night/night-boardwalk.webp" alt="Kingfisher Park boardwalk beside water after dark" loading="lazy" width="1600" height="898">
-            <figcaption>NATURE'S NIGHTLIGHT</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="night-transition-note page-width">
-        <span>DAYLIGHT</span>
-        <i aria-hidden="true"></i>
-        <span>GOLDEN HOUR</span>
-        <i aria-hidden="true"></i>
-        <span>AFTER DARK</span>
-      </div>
-    </section>
-
-    <section class="booking-cta" id="booking" aria-labelledby="booking-title">
-      <div class="booking-glow" aria-hidden="true"></div>
-      <div class="page-width booking-shell">
-        <div class="booking-copy">
-          <span class="section-kicker section-kicker-night">BOOK KINGFISHER PARK</span>
-          <h2 id="booking-title">From choosing an experience to a confirmed visit.</h2>
           <p>
-            The final site will let visitors select an experience, choose an available
-            date and time, enter guest details, review the total and complete secure online payment.
+            RnK brings conservation, regenerative food systems, education, and
+            community opportunity together rather than treating them as separate goals.
           </p>
-
-          <a class="button button-booking-demo" href="booking.html">
-            START BOOKING
-            <span aria-hidden="true">→</span>
-          </a>
         </div>
 
-        <ol class="booking-steps" aria-label="Planned booking flow">
-          <li>
+        <div class="home-work-grid" data-reveal>
+          <article>
             <span>01</span>
-            <strong>EXPERIENCE</strong>
-            <small>Choose what you want to do.</small>
-          </li>
-          <li>
+            <h3>Biodiversity Conservation</h3>
+            <p>Protect habitat, native flora, wildlife, and ecological knowledge across the Calamianes.</p>
+          </article>
+          <article>
             <span>02</span>
-            <strong>DATE &amp; TIME</strong>
-            <small>Select from confirmed availability.</small>
-          </li>
-          <li>
+            <h3>Regenerative Agriculture &amp; Food</h3>
+            <p>Build healthier soil and more resilient local food systems that work with biodiversity.</p>
+          </article>
+          <article>
             <span>03</span>
-            <strong>GUESTS</strong>
-            <small>Add guest and contact details.</small>
-          </li>
-          <li>
+            <h3>Education &amp; Youth</h3>
+            <p>Use schools, gardens, scholarships, and practical learning to build long-term stewardship.</p>
+          </article>
+          <article>
             <span>04</span>
-            <strong>SECURE PAYMENT</strong>
-            <small>Complete payment in the final Wix site.</small>
-          </li>
-        </ol>
+            <h3>Community &amp; Livelihoods</h3>
+            <p>Connect conservation with local ownership, sustainable enterprise, and community participation.</p>
+          </article>
+        </div>
 
-        <p class="booking-demo-note">
-          INTERACTIVE VS CODE PROTOTYPE · NO REAL PAYMENT IS PROCESSED HERE
-        </p>
+        <div class="section-more" data-reveal>
+          <a class="section-text-link section-text-link-light" href="our-work.html">Explore Our Work <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         FROM THE CALAMIANES — compact bridge to Places & Stories
+         Replaces duplicate full biodiversity and scholar sections on Home.
+         ======================================================= -->
+    <section class="field-notes-section" id="places-stories" aria-labelledby="field-notes-title">
+      <div class="content-shell">
+        <div class="field-notes-heading" data-reveal>
+          <div>
+            <span class="section-kicker">From the Calamianes</span>
+            <h2 id="field-notes-title">The places, wildlife, and people behind the work.</h2>
+          </div>
+          <p>
+            Explore a field-based view of RnK through authentic biodiversity imagery,
+            community landscapes, and stories from students and scholars.
+          </p>
+        </div>
+
+        <div class="field-notes-grid">
+          <a class="field-note" href="places-stories.html#biodiversity" data-reveal>
+            <img src="assets/images/biodiversity/palawan-hornbill.webp" alt="Palawan Hornbill" loading="lazy" />
+            <span class="field-note-overlay"></span>
+            <span class="field-note-copy"><small>01 · Biodiversity</small><strong>A living field record</strong><em>Explore wildlife &amp; flora →</em></span>
+          </a>
+          <a class="field-note" href="places-stories.html#scholars" data-reveal>
+            <img src="assets/images/story/community-field.webp" alt="Community members taking part in an outdoor RnK activity" loading="lazy" />
+            <span class="field-note-overlay"></span>
+            <span class="field-note-copy"><small>02 · People</small><strong>Stories that give conservation meaning</strong><em>Meet RnK scholars →</em></span>
+          </a>
+          <a class="field-note" href="our-work.html#berae-network" data-reveal>
+            <img src="assets/images/hero-02-growing-food.png" alt="A green food-growing landscape in the Calamianes" loading="lazy" />
+            <span class="field-note-overlay"></span>
+            <span class="field-note-copy"><small>03 · Places</small><strong>Where the work takes root</strong><em>See the BERAE network →</em></span>
+          </a>
+        </div>
+
+        <div class="section-more" data-reveal>
+          <a class="section-text-link" href="places-stories.html">Explore Places &amp; Stories <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         PARTNERS
+         ======================================================= -->
+    <section class="partners-section" aria-labelledby="partners-title">
+      <div class="content-shell partners-grid">
+        <div class="partners-copy" data-reveal>
+          <span class="section-kicker">Collaboration</span>
+          <h2 id="partners-title">The work grows through partnership.</h2>
+          <p>
+            RnK has worked with community groups, conservation organizations,
+            farms, tourism networks, schools, universities, and local institutions.
+          </p>
+        </div>
+
+        <div class="logo-wall" data-reveal>
+          <div class="partner-logo"><img src="assets/images/partners/parrots-usf.webp" alt="Parrots International and United Service Foundation" loading="lazy" /></div>
+          <div class="partner-logo"><img src="assets/images/partners/coron-natural-farms.webp" alt="Coron Natural Farms" loading="lazy" /></div>
+          <div class="partner-logo"><img src="assets/images/partners/cafa.webp" alt="CAFA" loading="lazy" /></div>
+          <div class="partner-logo"><img src="assets/images/partners/cate.webp" alt="Calamianes Association of Tourism Establishments" loading="lazy" /></div>
+          <div class="partner-logo"><img src="assets/images/partners/kingfisher-park.webp" alt="Kingfisher Park" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         GET INVOLVED
+         ======================================================= -->
+    <section class="involved-section" id="get-involved" aria-labelledby="involved-title">
+      <div class="content-shell involved-inner" data-reveal>
+        <div>
+          <span class="section-kicker section-kicker-light">Get Involved</span>
+          <h2 id="involved-title">Be part of the work.</h2>
+          <p>
+            Connect with Regalo ng Kilit Foundation Inc. to explore partnerships,
+            education support, conservation initiatives, and community collaboration.
+          </p>
+        </div>
+
+        <div class="involved-actions">
+          <a class="involved-primary" href="get-involved.html">Explore ways to connect <span aria-hidden="true">→</span></a>
+          <a class="involved-secondary" href="https://www.facebook.com/RegaloNgKilit" target="_blank" rel="noopener noreferrer">Visit Facebook ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <a class="mobile-sticky-book" href="booking.html" aria-label="Book a Kingfisher Park experience">
-    <span>
-      <small>EXPERIENCES FROM ₱400 / PERSON</small>
-      <strong>BOOK NOW</strong>
-    </span>
-    <span class="mobile-sticky-arrow" aria-hidden="true">→</span>
-  </a>
 
   <footer class="site-footer">
-    <div class="page-width footer-guide">
-      <div>
-        <span>FREE VISITOR GUIDE</span>
-        <strong>Know what to expect before you arrive.</strong>
-        <p>Current hours, experience rates, tide notes and responsible-viewing reminders in one place.</p>
-      </div>
-      <a href="visitor-guide.html">OPEN GUIDE <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="page-width footer-grid">
+    <div class="content-shell footer-grid">
       <div class="footer-brand">
-        <a class="footer-logo-lockup" href="index.html" aria-label="Kingfisher Park home">
-          <img src="assets/logo/kingfisher-park-logo-512.webp" alt="" width="512" height="512">
-          <span>
-            <strong>KINGFISHER PARK</strong>
-            <small>BIODIVERSITY HAVEN · CORON, PALAWAN</small>
-          </span>
-        </a>
-        <p>
-          A nature destination shaped by mangroves, biodiversity and meaningful day-to-night experiences.
-        </p>
+        <img src="assets/logo/rnk-bird.png" alt="" />
+        <div><strong>Regalo ng Kilit Foundation Inc.</strong><span>Calamianes, Palawan · Philippines</span></div>
       </div>
-
       <nav class="footer-nav" aria-label="Footer navigation">
-        <span>EXPLORE</span>
-        <a href="the-park.html">The Park</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="biodiversity.html">Biodiversity</a>
-        <a href="stories.html">Stories</a>
-        <a href="plan-your-visit.html">Plan Your Visit</a>
+        <a href="about.html">About</a><a href="our-work.html">Our Work</a><a href="places-stories.html">Places &amp; Stories</a><a href="get-involved.html">Get Involved</a>
       </nav>
-
-      <div class="footer-visit">
-        <span>VISIT</span>
-        <strong>1:00 PM — 9:00 PM</strong>
-        <p>Coron, Palawan<br>Philippines</p>
-        <a href="https://web.facebook.com/KingfisherPark" target="_blank" rel="noopener noreferrer">
-          Facebook / Messenger ↗
-        </a>
-      </div>
-
-      <div class="footer-book">
-        <span>RESERVATIONS</span>
-        <p>Online booking and secure payment are planned for the live Wix implementation.</p>
-        <a class="footer-book-link" href="booking.html">BOOK NOW →</a>
+      <div class="footer-contact">
+        <a href="mailto:regalongkilit@gmail.com">regalongkilit@gmail.com</a>
+        <a href="https://www.facebook.com/RegaloNgKilit" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
       </div>
     </div>
-
-    <div class="page-width footer-bottom">
-      <span>© 2026 KINGFISHER PARK</span>
-      <span>kingfisherpark.com</span>
-      <span>PRIVACY &amp; BOOKING TERMS · TO BE FINALIZED BEFORE LIVE CHECKOUT</span>
-    </div>
+    <div class="content-shell footer-bottom"><span>© 2026 Regalo ng Kilit Foundation Inc.</span><span>Calamianes, Palawan · Philippines</span></div>
   </footer>
-
-  <div class="prototype-toast" id="prototype-toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <script src="js/main.js"></script>
 </body>
