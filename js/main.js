@@ -279,3 +279,65 @@ if (storyDialog) {
     if (event.target === storyDialog) closeStoryDialog();
   });
 }
+
+
+/* =========================================================
+   V1.12 — CONTACT FORM PROTOTYPE BEHAVIOR
+   No visitor data is stored by the VS Code prototype. Submitting opens the
+   visitor's email application with the form content prefilled. The Wix Studio
+   implementation should replace this handler with a native Wix Form.
+   ========================================================= */
+
+const inquiryForm = document.getElementById("inquiryForm");
+const inquiryStatus = document.getElementById("inquiryStatus");
+
+if (inquiryForm) {
+  inquiryForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const requiredFields = Array.from(inquiryForm.querySelectorAll("[required]"));
+    let firstInvalid = null;
+
+    requiredFields.forEach((field) => {
+      const invalid = !field.checkValidity();
+      field.setAttribute("aria-invalid", String(invalid));
+      if (invalid && !firstInvalid) firstInvalid = field;
+    });
+
+    if (firstInvalid) {
+      if (inquiryStatus) inquiryStatus.textContent = "Please complete the required fields before sending your inquiry.";
+      firstInvalid.focus();
+      return;
+    }
+
+    const data = new FormData(inquiryForm);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const organization = String(data.get("organization") || "").trim();
+    const interest = String(data.get("interest") || "General Inquiry").trim();
+    const message = String(data.get("message") || "").trim();
+
+    const subject = `RnK website inquiry — ${interest}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      phone ? `Mobile: ${phone}` : "",
+      organization ? `Organization / Affiliation: ${organization}` : "",
+      `Interest: ${interest}`,
+      "",
+      message
+    ].filter(Boolean).join("\n");
+
+    if (inquiryStatus) inquiryStatus.textContent = "Your email application is being opened with this inquiry prepared for Regalo ng Kilit Foundation.";
+
+    window.location.href = `mailto:regalongkilit@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+  inquiryForm.addEventListener("input", (event) => {
+    const field = event.target;
+    if (field && field.matches("input, select, textarea") && field.checkValidity()) {
+      field.removeAttribute("aria-invalid");
+    }
+  });
+}

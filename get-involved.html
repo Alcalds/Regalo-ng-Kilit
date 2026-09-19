@@ -41,7 +41,7 @@
 
   <main id="main">
     <section class="page-hero page-hero-involved">
-      <div class="page-hero-media"><img src="assets/images/hero-03-community.png" alt="Community members participating in an outdoor activity" /></div>
+      <div class="page-hero-media"><img src="assets/images/hero-03-community.webp" alt="Community members participating in an outdoor activity" /></div>
       <div class="page-hero-overlay"></div>
       <div class="content-shell page-hero-inner"><span class="page-eyebrow">Get Involved</span><h1>Start with a conversation.</h1><p>Connect with RnK to explore partnerships, education support, conservation collaboration, and ways your skills or institution may contribute.</p></div>
     </section>
@@ -55,6 +55,69 @@
           <article data-reveal><span>03</span><h3>Support Conservation</h3><p>Explore collaboration around biodiversity, regenerative agriculture, environmental learning, field documentation, or habitat-focused initiatives.</p><a href="mailto:regalongkilit@gmail.com?subject=Conservation%20Collaboration%20Inquiry">Discuss conservation collaboration →</a></article>
           <article data-reveal><span>04</span><h3>Volunteer Your Skills</h3><p>Contact RnK to ask whether current activities need technical, educational, communications, research, or community-support skills.</p><a href="mailto:regalongkilit@gmail.com?subject=Volunteer%20Skills%20Inquiry">Introduce your skills →</a></article>
         </div>
+      </div>
+    </section>
+
+    <section class="page-section inquiry-section" aria-labelledby="inquiry-title">
+      <div class="content-shell inquiry-layout">
+        <div class="inquiry-intro" data-reveal>
+          <span class="section-kicker">Contact RnK</span>
+          <h2 id="inquiry-title">Tell us what you would like to explore.</h2>
+          <p>Send a general inquiry about partnerships, education, BERAE, conservation, community activities, or other ways to connect with Regalo ng Kilit Foundation.</p>
+          <div class="inquiry-note">
+            <span>Prefer email?</span>
+            <a href="mailto:regalongkilit@gmail.com">regalongkilit@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="inquiry-form" id="inquiryForm" data-reveal novalidate>
+          <div class="form-row form-row-two">
+            <div class="form-field">
+              <label for="inquiryName">Full Name <span aria-hidden="true">*</span></label>
+              <input id="inquiryName" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="inquiryEmail">Email Address <span aria-hidden="true">*</span></label>
+              <input id="inquiryEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="form-row form-row-two">
+            <div class="form-field">
+              <label for="inquiryPhone">Mobile Number <span class="form-optional">Optional</span></label>
+              <input id="inquiryPhone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="form-field">
+              <label for="inquiryOrg">Organization / Affiliation <span class="form-optional">Optional</span></label>
+              <input id="inquiryOrg" name="organization" type="text" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="inquiryInterest">I’m interested in <span aria-hidden="true">*</span></label>
+            <select id="inquiryInterest" name="interest" required>
+              <option value="">Choose an area</option>
+              <option>General Inquiry</option>
+              <option>Partnership</option>
+              <option>Education &amp; Training</option>
+              <option>BERAE</option>
+              <option>Conservation</option>
+              <option>Community Activities</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="inquiryMessage">Message <span aria-hidden="true">*</span></label>
+            <textarea id="inquiryMessage" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="inquiry-submit" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
+            <p class="form-help">Required fields are marked with an asterisk (*).</p>
+          </div>
+          <p class="form-status" id="inquiryStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
