@@ -1,23 +1,17 @@
 REGALO NG KILIT FOUNDATION INC.
-V1.12 — RESPONSIVE + READABILITY REVIEW
+V1.13 — GET INVOLVED + GITHUB-SAFE FORM REVIEW
 
-Open index.html to start.
+Start with: index.html
+Get Involved review: get-involved.html
 
-This build preserves the V1.10 content and approved Modern Conservation Editorial direction while adding the full responsive/readability correction pass requested after visual review.
+This build retains V1.12's Modern Calamianes homepage treatment and the V1.11 responsive/readability corrections.
 
-Priority corrections:
-- Places & Stories Field Notes overlap fixed at the CSS root cause
-- Field Notes dark-section contrast restored
-- small/supporting typography increased sitewide
-- responsive header spacing strengthened at intermediate widths
-- story/media grids made more resilient on tablet/mobile
-- accessibility/readability safeguards retained
+V1.13 changes:
+- upgraded Get Involved into a four-path participation hub
+- route buttons preselect the inquiry category and move visitors to the form
+- retained the general inquiry/contact form
+- retained email-prefill prototype behavior for static VS Code/GitHub review
+- added versioned CSS/JS filenames to avoid stale GitHub Pages/browser cache
+- kept the structure reproducible with native Wix Studio grids, stacks, buttons, and Wix Forms
 
-See docs/RESPONSIVE_READABILITY_AUDIT_V1_11.md for the audit summary.
-
-
-V1.12 additions:
-- Modern editorial mosaic for the homepage “From the Calamianes” section.
-- Contact/inquiry form added to Get Involved.
-- Form prototype opens a prepared email; Wix Studio should use native Wix Forms.
-- New layouts use ordinary grid/stack/container patterns that map directly to Wix Studio.
+No online donation workflow has been introduced because none has been confirmed by RnK.

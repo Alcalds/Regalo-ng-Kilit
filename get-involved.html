@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles-v1-13.css?v=1.13" />
 </head>
 <body class="interior-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -49,11 +49,31 @@
     <section class="page-section page-section-light">
       <div class="content-shell">
         <div class="page-heading" data-reveal><span class="section-kicker">Ways to Connect</span><h2>Bring your skills, institution, or support into the conversation.</h2><p>Choose the area that best fits your interest, then contact RnK to discuss current needs and opportunities.</p></div>
-        <div class="involvement-grid">
-          <article data-reveal><span>01</span><h3>Become a Partner</h3><p>For schools, universities, local government units, community organizations, businesses, and institutions interested in conservation, education, agriculture, or local development.</p><a href="mailto:regalongkilit@gmail.com?subject=Partnership%20Inquiry">Start a partnership inquiry →</a></article>
-          <article data-reveal><span>02</span><h3>Support Education</h3><p>Ask RnK about current scholarship, student-support, and education initiatives and how support can be aligned with actual needs.</p><a href="mailto:regalongkilit@gmail.com?subject=Education%20Support%20Inquiry">Ask about education support →</a></article>
-          <article data-reveal><span>03</span><h3>Support Conservation</h3><p>Explore collaboration around biodiversity, regenerative agriculture, environmental learning, field documentation, or habitat-focused initiatives.</p><a href="mailto:regalongkilit@gmail.com?subject=Conservation%20Collaboration%20Inquiry">Discuss conservation collaboration →</a></article>
-          <article data-reveal><span>04</span><h3>Volunteer Your Skills</h3><p>Contact RnK to ask whether current activities need technical, educational, communications, research, or community-support skills.</p><a href="mailto:regalongkilit@gmail.com?subject=Volunteer%20Skills%20Inquiry">Introduce your skills →</a></article>
+        <div class="involvement-grid involvement-paths" aria-label="Ways to get involved with RnK">
+          <article class="involvement-path" data-reveal>
+            <div class="involvement-path-head"><span>01</span><span class="involvement-path-type">Institutions &amp; organizations</span></div>
+            <h3>Partner with RnK</h3>
+            <p>For schools, universities, local government units, community organizations, businesses, and institutions exploring collaboration with RnK.</p>
+            <button class="involvement-route" type="button" data-interest-target="Partnership" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="involvement-path" data-reveal>
+            <div class="involvement-path-head"><span>02</span><span class="involvement-path-type">Learning &amp; youth</span></div>
+            <h3>Education &amp; Training</h3>
+            <p>Connect about scholarships, student support, school-based initiatives, farmer training, learning activities, and education partnerships.</p>
+            <button class="involvement-route" type="button" data-interest-target="Education &amp; Training" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="involvement-path" data-reveal>
+            <div class="involvement-path-head"><span>03</span><span class="involvement-path-type">Landscape &amp; ecology</span></div>
+            <h3>BERAE &amp; Conservation</h3>
+            <p>Explore collaboration around biodiversity, regenerative agriculture, field learning, research, habitat stewardship, and BERAE-related work.</p>
+            <button class="involvement-route" type="button" data-interest-target="BERAE &amp; Conservation" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="involvement-path" data-reveal>
+            <div class="involvement-path-head"><span>04</span><span class="involvement-path-type">People &amp; communities</span></div>
+            <h3>Share Skills &amp; Support Communities</h3>
+            <p>Start a conversation about technical expertise, community activities, communications, nutrition advocacy, research, or other practical support.</p>
+            <button class="involvement-route" type="button" data-interest-target="Community &amp; Skills Support" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+          </article>
         </div>
       </div>
     </section>
@@ -63,7 +83,7 @@
         <div class="inquiry-intro" data-reveal>
           <span class="section-kicker">Contact RnK</span>
           <h2 id="inquiry-title">Tell us what you would like to explore.</h2>
-          <p>Send a general inquiry about partnerships, education, BERAE, conservation, community activities, or other ways to connect with Regalo ng Kilit Foundation.</p>
+          <p>Choose a pathway above or send a general inquiry. The form helps RnK understand what you would like to discuss before continuing the conversation.</p>
           <div class="inquiry-note">
             <span>Prefer email?</span>
             <a href="mailto:regalongkilit@gmail.com">regalongkilit@gmail.com</a>
@@ -100,9 +120,8 @@
               <option>General Inquiry</option>
               <option>Partnership</option>
               <option>Education &amp; Training</option>
-              <option>BERAE</option>
-              <option>Conservation</option>
-              <option>Community Activities</option>
+              <option>BERAE &amp; Conservation</option>
+              <option>Community &amp; Skills Support</option>
               <option>Other</option>
             </select>
           </div>
@@ -138,6 +157,6 @@
     <div class="content-shell footer-bottom"><span>© 2026 Regalo ng Kilit Foundation Inc.</span><span>Calamianes, Palawan · Philippines</span></div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main-v1-13.js?v=1.13"></script>
 </body>
 </html>
