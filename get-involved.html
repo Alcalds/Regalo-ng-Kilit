@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles-v1-13.css?v=1.13" />
+  <link rel="stylesheet" href="css/styles-v1-15.css?v=1.15" />
 </head>
 <body class="interior-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,50 +40,150 @@
   </header>
 
   <main id="main">
-    <section class="page-hero page-hero-involved">
+    <section class="page-hero page-hero-involved page-hero-involved-journey">
       <div class="page-hero-media"><img src="assets/images/hero-03-community.webp" alt="Community members participating in an outdoor activity" /></div>
       <div class="page-hero-overlay"></div>
-      <div class="content-shell page-hero-inner"><span class="page-eyebrow">Get Involved</span><h1>Start with a conversation.</h1><p>Connect with RnK to explore partnerships, education support, conservation collaboration, and ways your skills or institution may contribute.</p></div>
+      <div class="content-shell page-hero-inner">
+        <span class="page-eyebrow">Get Involved</span>
+        <h1>Find your way into the work.</h1>
+        <p>Whether you represent a school, community, organization, institution, or want to contribute your skills, begin with the pathway that best matches how you would like to connect with RnK.</p>
+        <a class="hero-journey-cta" href="#ways-to-connect">Explore ways to get involved <span aria-hidden="true">↓</span></a>
+      </div>
     </section>
 
-    <section class="page-section page-section-light">
+    <section class="page-section page-section-light involvement-hub" id="ways-to-connect" aria-labelledby="ways-heading">
       <div class="content-shell">
-        <div class="page-heading" data-reveal><span class="section-kicker">Ways to Connect</span><h2>Bring your skills, institution, or support into the conversation.</h2><p>Choose the area that best fits your interest, then contact RnK to discuss current needs and opportunities.</p></div>
-        <div class="involvement-grid involvement-paths" aria-label="Ways to get involved with RnK">
-          <article class="involvement-path" data-reveal>
+        <div class="participation-intro" data-reveal>
+          <div>
+            <span class="section-kicker">Choose a Path</span>
+            <h2 id="ways-heading">How would you like to connect with RnK?</h2>
+          </div>
+          <p>Choose the route closest to your interest. Each pathway gives a little more context before you contact the Foundation.</p>
+        </div>
+
+        <div class="involvement-grid involvement-paths involvement-paths-editorial" aria-label="Ways to get involved with RnK">
+          <article class="involvement-path involvement-path-wide" data-reveal>
             <div class="involvement-path-head"><span>01</span><span class="involvement-path-type">Institutions &amp; organizations</span></div>
             <h3>Partner with RnK</h3>
             <p>For schools, universities, local government units, community organizations, businesses, and institutions exploring collaboration with RnK.</p>
-            <button class="involvement-route" type="button" data-interest-target="Partnership" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+            <a class="involvement-route" href="#path-partnership" data-interest-target="Partnership">Explore this path <span aria-hidden="true">→</span></a>
           </article>
-          <article class="involvement-path" data-reveal>
+
+          <article class="involvement-path involvement-path-compact" data-reveal>
             <div class="involvement-path-head"><span>02</span><span class="involvement-path-type">Learning &amp; youth</span></div>
             <h3>Education &amp; Training</h3>
-            <p>Connect about scholarships, student support, school-based initiatives, farmer training, learning activities, and education partnerships.</p>
-            <button class="involvement-route" type="button" data-interest-target="Education &amp; Training" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+            <p>Connect around school initiatives, scholarships, farmer training, youth learning, and education partnerships.</p>
+            <a class="involvement-route" href="#path-education" data-interest-target="Education &amp; Training">Explore this path <span aria-hidden="true">→</span></a>
           </article>
-          <article class="involvement-path" data-reveal>
+
+          <article class="involvement-path involvement-path-compact" data-reveal>
             <div class="involvement-path-head"><span>03</span><span class="involvement-path-type">Landscape &amp; ecology</span></div>
             <h3>BERAE &amp; Conservation</h3>
-            <p>Explore collaboration around biodiversity, regenerative agriculture, field learning, research, habitat stewardship, and BERAE-related work.</p>
-            <button class="involvement-route" type="button" data-interest-target="BERAE &amp; Conservation" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+            <p>Explore biodiversity, regenerative agriculture, field learning, research, habitat stewardship, and BERAE-related collaboration.</p>
+            <a class="involvement-route" href="#path-berae" data-interest-target="BERAE &amp; Conservation">Explore this path <span aria-hidden="true">→</span></a>
           </article>
-          <article class="involvement-path" data-reveal>
+
+          <article class="involvement-path involvement-path-wide" data-reveal>
             <div class="involvement-path-head"><span>04</span><span class="involvement-path-type">People &amp; communities</span></div>
             <h3>Share Skills &amp; Support Communities</h3>
             <p>Start a conversation about technical expertise, community activities, communications, nutrition advocacy, research, or other practical support.</p>
-            <button class="involvement-route" type="button" data-interest-target="Community &amp; Skills Support" aria-controls="inquiryForm">Choose this path <span aria-hidden="true">→</span></button>
+            <a class="involvement-route" href="#path-community" data-interest-target="Community &amp; Skills Support">Explore this path <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="page-section inquiry-section" aria-labelledby="inquiry-title">
+    <section class="page-section participation-details" aria-labelledby="participation-details-title">
+      <div class="content-shell">
+        <div class="participation-details-heading" data-reveal>
+          <span class="section-kicker">What Collaboration Can Look Like</span>
+          <h2 id="participation-details-title">A clearer next step before you send an inquiry.</h2>
+          <p>These pathways help visitors describe the kind of connection they want to explore. They are not promises of a specific program, placement, or funding opportunity.</p>
+        </div>
+
+        <div class="participation-detail-list">
+          <article class="participation-detail" id="path-partnership" data-reveal>
+            <div class="participation-detail-number">01</div>
+            <div class="participation-detail-copy">
+              <span>Partnerships</span>
+              <h3>Work together around shared goals.</h3>
+              <p>Suitable for institutions, schools, local government, community organizations, businesses, and groups that want to discuss work aligned with RnK’s mission in the Calamianes.</p>
+            </div>
+            <button class="participation-detail-cta inquiry-route" type="button" data-interest-target="Partnership">Start a conversation <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="participation-detail" id="path-education" data-reveal>
+            <div class="participation-detail-number">02</div>
+            <div class="participation-detail-copy">
+              <span>Education &amp; Training</span>
+              <h3>Learn, teach, and strengthen local capacity.</h3>
+              <p>Suitable for conversations around school-based activities, training, youth learning, agricultural education, scholarships, and knowledge-sharing initiatives.</p>
+            </div>
+            <button class="participation-detail-cta inquiry-route" type="button" data-interest-target="Education &amp; Training">Start a conversation <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="participation-detail" id="path-berae" data-reveal>
+            <div class="participation-detail-number">03</div>
+            <div class="participation-detail-copy">
+              <span>BERAE &amp; Conservation</span>
+              <h3>Connect biodiversity, food, landscapes, and enterprise.</h3>
+              <p>Suitable for biodiversity, regenerative agriculture, field learning, research, technical collaboration, and other work related to RnK’s BERAE framework.</p>
+            </div>
+            <button class="participation-detail-cta inquiry-route" type="button" data-interest-target="BERAE &amp; Conservation">Start a conversation <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="participation-detail" id="path-community" data-reveal>
+            <div class="participation-detail-number">04</div>
+            <div class="participation-detail-copy">
+              <span>Skills &amp; Community Support</span>
+              <h3>Contribute knowledge where it can be useful.</h3>
+              <p>Suitable for people or groups who want to discuss relevant professional skills, community support, nutrition advocacy, communications, research, or other practical contributions.</p>
+            </div>
+            <button class="participation-detail-cta inquiry-route" type="button" data-interest-target="Community &amp; Skills Support">Start a conversation <span aria-hidden="true">→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section-mist involvement-proof" aria-labelledby="proof-title">
+      <div class="content-shell">
+        <div class="proof-heading" data-reveal>
+          <div>
+            <span class="section-kicker">RnK in Action</span>
+            <h2 id="proof-title">See what collaboration already looks like on the ground.</h2>
+          </div>
+          <p>Selected examples from activities already documented across RnK’s work in the Calamianes.</p>
+        </div>
+
+        <div class="proof-grid">
+          <a class="proof-card" href="places-stories.html#field-notes" data-reveal>
+            <figure><img src="assets/images/stories/field-notes/cafa-seed-aug-2026/cafa-seed-aug-2026-1.webp" alt="Participants during an RnK-supported seed training activity with CAFA" loading="lazy" /></figure>
+            <div class="proof-card-copy"><span>Community Partnership</span><h3>Working with CAFA in Cheey</h3><p>CAFA is an RnK community partner in Barangay Cheey supporting BERAE practice and implementation.</p><strong>View field stories <em aria-hidden="true">→</em></strong></div>
+          </a>
+
+          <a class="proof-card" href="places-stories.html#field-notes" data-reveal>
+            <figure><img src="assets/images/stories/field-notes/berae-training-nov-2025/berae-training-nov-2025-1.webp" alt="Participants during an RnK-SGP BERAE training activity" loading="lazy" /></figure>
+            <div class="proof-card-copy"><span>Training &amp; Field Learning</span><h3>BERAE in classroom and field settings</h3><p>The RnK-SGP BERAE training on November 12–13, 2025 included a field-training day.</p><strong>Explore BERAE field notes <em aria-hidden="true">→</em></strong></div>
+          </a>
+
+          <a class="proof-card" href="places-stories.html#nutrition-advocacy" data-reveal>
+            <figure><img src="assets/images/stories/nutrition/latch-coron-aug-2026/latch-coron-aug-2026-1.webp" alt="Breastfeeding and nutrition education session conducted by LATCH with RnK support" loading="lazy" /></figure>
+            <div class="proof-card-copy"><span>Nutrition Advocacy</span><h3>Breastfeeding education with LATCH</h3><p>LATCH is an RnK partner group for breastfeeding and nutrition advocacy, with documented classes in Coron and Busuanga.</p><strong>See community stories <em aria-hidden="true">→</em></strong></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section inquiry-section" id="contact-rnk" aria-labelledby="inquiry-title">
       <div class="content-shell inquiry-layout">
         <div class="inquiry-intro" data-reveal>
-          <span class="section-kicker">Contact RnK</span>
-          <h2 id="inquiry-title">Tell us what you would like to explore.</h2>
-          <p>Choose a pathway above or send a general inquiry. The form helps RnK understand what you would like to discuss before continuing the conversation.</p>
+          <span class="section-kicker">Ready to Connect?</span>
+          <h2 id="inquiry-title">Start the conversation with RnK.</h2>
+          <p>Tell RnK what you are interested in, who you represent if applicable, and what you would like to explore. Choosing a pathway above automatically sets the relevant inquiry category.</p>
+          <div class="inquiry-expectation" aria-label="What this inquiry means">
+            <span>What this form does</span>
+            <p>It helps RnK understand what you want to explore and how to contact you. Sending an inquiry does not enroll you in a program, confirm a partnership, or create a commitment.</p>
+          </div>
           <div class="inquiry-note">
             <span>Prefer email?</span>
             <a href="mailto:regalongkilit@gmail.com">regalongkilit@gmail.com</a>
@@ -142,11 +242,11 @@
 
     <section class="page-section page-section-green">
       <div class="content-shell contact-panel">
-        <div data-reveal><span class="section-kicker section-kicker-light">Contact</span><h2>Regalo ng Kilit Foundation Inc.</h2><p>Contact RnK by email or Facebook.</p></div>
+        <div data-reveal><span class="section-kicker section-kicker-light">Direct Contact</span><h2>Regalo ng Kilit Foundation Inc.</h2><p>Contact RnK by email or Facebook.</p></div>
         <div class="contact-links" data-reveal><a href="mailto:regalongkilit@gmail.com"><span>Email</span><strong>regalongkilit@gmail.com</strong><em>→</em></a><a href="https://www.facebook.com/RegaloNgKilit" target="_blank" rel="noopener noreferrer"><span>Facebook</span><strong>Regalo ng Kilit</strong><em>↗</em></a></div>
       </div>
     </section>
-</main>
+  </main>
 
   <footer class="site-footer">
     <div class="content-shell footer-grid">
@@ -157,6 +257,6 @@
     <div class="content-shell footer-bottom"><span>© 2026 Regalo ng Kilit Foundation Inc.</span><span>Calamianes, Palawan · Philippines</span></div>
   </footer>
 
-  <script src="js/main-v1-13.js?v=1.13"></script>
+  <script src="js/main-v1-15.js?v=1.15"></script>
 </body>
 </html>

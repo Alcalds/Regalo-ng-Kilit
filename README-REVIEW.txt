@@ -1,17 +1,14 @@
 REGALO NG KILIT FOUNDATION INC.
-V1.13 — GET INVOLVED + GITHUB-SAFE FORM REVIEW
+V1.15 — CLARITY + NAVIGATION REVIEW
 
-Start with: index.html
-Get Involved review: get-involved.html
+Open: index.html
 
-This build retains V1.12's Modern Calamianes homepage treatment and the V1.11 responsive/readability corrections.
+This build continues V1.14 and adds the visitor-comprehension revisions from the 100-visitor UX simulation:
+- simpler BERAE and SHGBEE entry explanations
+- homepage topic navigation
+- Places & Stories theme navigation
+- stronger cross-linking between stories and program areas
+- clearer Get Involved inquiry expectations
+- GitHub-safe versioned CSS/JS references
 
-V1.13 changes:
-- upgraded Get Involved into a four-path participation hub
-- route buttons preselect the inquiry category and move visitors to the form
-- retained the general inquiry/contact form
-- retained email-prefill prototype behavior for static VS Code/GitHub review
-- added versioned CSS/JS filenames to avoid stale GitHub Pages/browser cache
-- kept the structure reproducible with native Wix Studio grids, stacks, buttons, and Wix Forms
-
-No online donation workflow has been introduced because none has been confirmed by RnK.
+The design direction remains Modern Conservation Editorial and all new layouts are designed for straightforward Wix Studio recreation.
