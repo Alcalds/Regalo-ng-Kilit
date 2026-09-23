@@ -22,7 +22,7 @@ The At-a-Glance section now keeps only three visitor-relevant facts: Established
 ## Deliberately retained
 - Established 2019
 - Philippine NGO identity
-- Calamianes, Palawan geographic focus
+- Coron, Palawan geographic focus
 - Dr. Manuel R. Reyes as President beside his portrait
 - Official Vision and Mission
 - Verified historical milestones
